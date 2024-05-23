@@ -56,6 +56,10 @@ h2 {
   border-color: var(--yellow);
 }
 
+.accent {
+  color: var(--yellow);
+}
+
 @media (min-width: 768px) {
   section {
     padding-top: 50px;
