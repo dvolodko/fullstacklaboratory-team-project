@@ -1,0 +1,85 @@
+:root {
+  --black: #1c2225;
+  --yellow: #ecd979;
+  --white: #fcf9f9;
+  --yellow: #ecd979;
+  --white: #fcf9f9;
+  --font-prime: rgba(252, 249, 249, 0.4);
+  --grey-transparent: rgba(255, 255, 255, 0.25);
+  --font-family: 'Manrope', sans-serif;
+  --transition-function-main: cubic-bezier(0.4, 0, 0.2, 1);
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--black);
+  font-family: var(--font-family);
+  font-size: 14px;
+  color: var(--font-prime);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--white);
+}
+
+section {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.375;
+  letter-spacing: -0.03em;
+}
+
+.button {
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 14px 36px;
+  min-width: 145px;
+  height: 49px;
+  background-color: transparent;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+  transition: border-color 250ms var(--transition-function-main);
+}
+
+.button:hover,
+.button:focus {
+  border-color: var(--yellow);
+}
+
+@media (min-width: 768px) {
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  h2 {
+    font-size: 44px;
+    line-height: 1.45;
+  }
+
+  .button {
+    padding: 14px 39px;
+    min-width: 168px;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  section {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+}
