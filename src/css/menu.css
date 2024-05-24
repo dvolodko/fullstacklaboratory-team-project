@@ -1,0 +1,13 @@
+.navigation-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 25px;
+}
+.item-link-page {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  text-transform: uppercase;
+  color: var(--white);
+}
