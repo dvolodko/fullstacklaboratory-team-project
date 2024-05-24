@@ -7,6 +7,7 @@
   display: grid;
   column-gap: 10px;
   row-gap: 10px;
+  
 }
 
 .our-collection-grid-item {
@@ -53,6 +54,7 @@
   border: 1px solid #1c2225;
   color: #fcf9f9;
   perspective: 1000px;
+  gap: 18px
 }
 
 .flip-card-inner {
@@ -106,22 +108,23 @@
   background-color: var(--yellow);
 }
 
+
 /* Responsive Layout */
 
 @media (min-width: 320px) and (max-width: 759px) {
-  .our-collection-grid {
+  .our-collection-grid .flip-card{
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
-  .our-collection-grid {
+  .our-collection-grid  {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1280px) {
-  .our-collection-grid {
+  .our-collection-grid  {
     grid-template-columns: repeat(3, 1fr);
     
   }
