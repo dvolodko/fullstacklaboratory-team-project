@@ -1,93 +1,128 @@
-
 .our-collection-title {
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: clamp(2rem, 1.7359rem + 1.1268vw, 2.75rem);
-
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-
 .our-collection-grid {
-    display: grid;
-    column-gap: 10px;
-    row-gap: 20px;
-    
+  display: grid;
+  column-gap: 10px;
+  row-gap: 10px;
 }
 
 .our-collection-grid-item {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    border-radius: 4px;
-    background-color: inherit;
- 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+  background-color: inherit;
+  
 }
-    
 
 .item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 18px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 18px;
 }
+
 
 
 .our-collection-text {
-    text-transform: uppercase;
-    font-weight: 500;
-line-height: 100%;
-letter-spacing: 0.05em;
-font-size: clamp(0.875rem, 0.787rem + 0.3756vw, 1.125rem);
-text-align: left;
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  font-size: clamp(0.875rem, 0.787rem + 0.3756vw, 1.125rem);
+  text-align: left;
+  
 }
 
 .our-collection-price {
-    font-weight: 400;
-font-size: 14px;
-line-height: 100%;
-letter-spacing: 0.05em;
-font-size: clamp(0.875rem, 0.787rem + 0.3756vw, 1.125rem);
-text-align: left;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  font-size: clamp(0.875rem, 0.787rem + 0.3756vw, 1.125rem);
+  text-align: left;
 }
 
+/* ======================== Flip Card ======================== */
+.flip-card {
+  background-color: transparent;
+  border: 1px solid #1c2225;
+  color: #fcf9f9;
+  perspective: 1000px;
+}
 
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
 
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
 
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+}
 
+.flip-card-back {
+  background-color: #1c2225;
 
+  color: #fcf9f9;
+  transform: rotateY(180deg);
+}
 
+.flip-text {
+ 
+  color: var(--black);
+  
+  margin-bottom: 100px;
+  
+}
 
+.proto-image {
+  width: 335px;
+  height: 400px;
+  background-color: var(--white);
+  border-radius: 4px;
+  margin-bottom: 18px;
+  
+}
 
-
+.proto-image-back {
+  width: 335px;
+  height: 400px;
+  background-color: var(--yellow);
+}
 
 /* Responsive Layout */
-@media (max-width: 319px) {
-    .container {
-        grid-template-columns: 1fr;
-        
-    }
-}
 
 @media (min-width: 320px) and (max-width: 759px) {
-
-
-    .our-collection-grid {
-        grid-template-columns: 1fr;
-    }
+  .our-collection-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media (min-width: 760px) and (max-width: 1279px) {
-    
-    .our-collection-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+@media (min-width: 768px) and (max-width: 1279px) {
+  .our-collection-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1280px) {
+  .our-collection-grid {
+    grid-template-columns: repeat(3, 1fr);
     
-    .our-collection-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  }
 }
