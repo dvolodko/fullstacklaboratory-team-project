@@ -1,8 +1,12 @@
+.header .page-navigation {
+  display: none;
+}
 .navigation-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px 40px;
+  min-width: 280px;
+  max-height: 61px;
 }
 .item-link-page {
   font-weight: 400;
@@ -10,4 +14,20 @@
   line-height: 129%;
   text-transform: uppercase;
   color: var(--white);
+  transition: color 250ms var(--transition-function-main);
+}
+.item-link-page:hover,
+.item-link-page:focus {
+  color: var(--yellow);
+}
+@media screen and (min-width: 768px) {
+  .navigation-menu {
+    grid-template-columns: repeat (4, 1fr);
+    gap: 25px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header .page-navigation {
+    display: grid;
+  }
 }
