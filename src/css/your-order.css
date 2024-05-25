@@ -1,0 +1,39 @@
+.your-order {
+  margin-bottom: 40px;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-input {
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  width: 508px;
+  height: 50px;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: var(--white);
+  background-color: transparent;
+  padding: 14px 16px;
+}
+
+.order-input:hover {
+  border: 1px solid rgba(252, 249, 249, 0.6);
+}
+
+.order-input::placeholder {
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: rgba(252, 249, 249, 0.5);
+}
+
+.comment-field {
+  border-radius: 8px;
+  width: 508px;
+  height: 196px;
+  margin-bottom: 40px;
+  resize: none;
+}
