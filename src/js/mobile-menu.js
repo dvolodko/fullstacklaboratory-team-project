@@ -5,6 +5,7 @@
 
   const toggleMenu = () => {
     const anchors = mobileMenu.querySelectorAll('a[href*="#"]');
+    console.log("click");
     const isMenuOpen =
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
