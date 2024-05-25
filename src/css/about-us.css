@@ -1,44 +1,48 @@
-/* /* /* ============ABOUT US====== */
-.about-title{
-margin-bottom: 40px;
-margin-top: 2px;
+/* ============ABOUT US====== */
+.about-title {
+  margin-bottom: 40px;
+  margin-top: 2px;
 }
-.about-text{
-    margin-bottom: 50px;
-    letter-spacing: -0.04em;
-   
+
+.about-text {
+  margin-bottom: 50px;
+  letter-spacing: -0.04em;
 }
-.about-text-vyshyvanka{
-   margin-top: 0;
-   margin-bottom: 0;
-} 
-.about-text-story{
-    margin-bottom: 20px;
-    margin-top: 0;
+
+.about-text-vyshyvanka {
+  margin-top: 0;
+  margin-bottom: 0;
 }
-.about-container{
-    display: flex;
-    flex-direction: column;
-    max-width: 375px;
-    height: 957px;
+
+.about-text-story {
+  margin-bottom: 20px;
+  margin-top: 0;
 }
-@media screen and (max-width:375px){
-    .about-img{
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 375px;
+  height: 957px;
+}
+
+@media screen and (max-width: 375px) {
+  .about-img {
     width: 335px;
     height: 499px;
-    } 
+  }
 }
 
-.about-thumb{
-    border-radius: 4px;
-    overflow: hidden;
+.about-thumb {
+  border-radius: 4px;
+  overflow: hidden;
 }
 
-.about{
-    background-image: url(../);
-    background-size: 459px 408px; 
-       background-repeat: no-repeat;
-       background-color: black;
+.about {
+  background-image: url(../);
+  background-size: 459px 408px;
+  background-repeat: no-repeat;
+  background-color: black;
   position: relative;
   background-position: left 105px bottom 18px;
-  }
+}
