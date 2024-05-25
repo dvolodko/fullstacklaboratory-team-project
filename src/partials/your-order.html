@@ -1,0 +1,46 @@
+<section class="your-order">
+  <div class="container">
+    <h2 class="your-order" id="your-order">
+      <span class="accent">Your order</span> is our priority: Personalized
+      approach and quality of service
+    </h2>
+    <form class="order-form">
+      <div class="order-field">
+        <div class="order-input-wrap">
+          <input
+            type="text"
+            name="customer-name"
+            placeholder="Enter your full name"
+            class="order-input"
+            id="customer-name"
+            required
+            pattern="^(\\w{2,})\\s(\\w+)$"
+          />
+        </div>
+      </div>
+      <div class="order-field">
+        <div class="order-input-wrap">
+          <input
+            type="ema"
+            name="customer-email"
+            placeholder="Enter your email"
+            class="order-input"
+            id="customer-email"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+          />
+        </div>
+      </div>
+      <div class="order-form">
+        <textarea
+          name="customer-comment"
+          placeholder="Comments"
+          id="customer-comment"
+          class="order-input comment-field"
+          required
+        ></textarea>
+      </div>
+    </form>
+    <button type="submit" class="button">SEND</button>
+  </div>
+</section>
