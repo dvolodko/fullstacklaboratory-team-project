@@ -1,4 +1,4 @@
-/* /* /* ============ABOUT US====== */
+
 .about-title{
 margin-bottom: 40px;
 margin-top: 2px;
@@ -29,13 +29,14 @@ margin-top: 2px;
     } 
 }
 
+
 .about-thumb{
     border-radius: 4px;
     overflow: hidden;
 }
 
 .about{
-    background-image: url(../);
+    background-image: url();
     background-size: 459px 408px; 
        background-repeat: no-repeat;
        background-color: black;
