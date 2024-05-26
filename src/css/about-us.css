@@ -44,7 +44,7 @@ margin-top: 2px;
   .about{
     max-width: 335px;
   }
-}git
+}
 .about-thumb {
   border-radius: 4px;
   overflow: hidden;
@@ -84,8 +84,8 @@ height: 545px;
 
 @media screen and (min-width:1280px){
   .about-text-all{
-    margin-top: 78 px;
-    padding-bottom:78 px;
+    margin-top: 78px;
+    padding-bottom:78px;
     width: 536px;
     height: 388px;
    }
@@ -105,4 +105,19 @@ background-position: left 845px bottom 80px;
      height: 545px;
  }
 }
-    
+
+
+@media screen and (min-width:1440px){
+  .about-text-all{
+    width: 481px;
+    height: 388px;
+  }
+  .about-container{
+    background-size: 544px 483px; 
+    background-position: left 795px bottom 79px;
+  }
+  .about-img{
+    width: 709px;
+    height: 545px;
+}
+}
