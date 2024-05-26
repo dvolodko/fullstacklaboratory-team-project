@@ -51,6 +51,10 @@ h2 {
   transition: border-color 250ms var(--transition-function-main);
 }
 
+.button-icon {
+  transform: rotateX(-30deg);
+}
+
 .button:hover,
 .button:focus {
   border-color: var(--yellow);
