@@ -38,6 +38,10 @@ h2 {
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 15px;
   padding: 14px 36px;
@@ -52,12 +56,17 @@ h2 {
 }
 
 .button-icon {
-  transform: rotateX(-30deg);
+  transform: rotateZ(330deg);
+  transform-origin: center;
+  transition: transform 250ms var(--transition-function-main);
 }
 
 .button:hover,
 .button:focus {
   border-color: var(--yellow);
+  & .button-icon {
+    transform: rotateZ(360deg);
+  }
 }
 
 .accent {
