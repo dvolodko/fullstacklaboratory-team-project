@@ -1,23 +1,178 @@
 .your-order {
-  margin-bottom: 40px;
 }
 
-.order-form {
+.container .your-order {
+  display: flex;
+  flex-direction: column;
+}
+
+.girl-green-shirt {
+  background-image: url(/images/vyshyvanka-\ mobile-375/image-girl@1x-min.jpg);
+  max-width: 375px;
+  min-width: 320px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+
+@media (min-device-pixel-ration: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .girl-green-shirt {
+    background-image: url(/images/vyshyvanka-\ mobile-375/image-girl@2x-min.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .girl-green-shirt {
+    background-image: url(/images/vyshyvanka-tablet-768/Image-girl@1x.jpg);
+  }
+
+  @media (min-device-pixel-ration: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .girl-green-shirt {
+      background-image: url(/images/vyshyvanka-tablet-768/Image-girl@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .girl-green-shirt {
+    background-image: url(/images/vyshyvanka-desktop-1280/Image-girl@1x.jpg);
+  }
+
+  @media (min-device-pixel-ration: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .girl-green-shirt {
+      background-image: url(/images/vyshyvanka-desktop-1280/Image-girl@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .girl-green-shirt {
+    background-image: url(/images/vyshyvanka-desktop-1440/Image-girl@1x.jpg);
+  }
+
+  @media (min-device-pixel-ration: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .girl-green-shirt {
+      background-image: url(/images/vyshyvanka-desktop-1440/Image-girl@2x.jpg);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .girl-green-shirt {
+    max-width: 768px;
+    height: 776px;
+    margin-bottom: 100px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .girl-green-shirt {
+    max-width: 1282px;
+    margin-bottom: 150px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .girl-green-shirt {
+    max-width: 1440px;
+  }
+}
+
+.your-order-buttom-part {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .your-order-buttom-part {
+    background-image: url(/images/png/black.png);
+    background-repeat: no-repeat;
+    background-position: left -222px bottom 0px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .your-order-buttom-part {
+    flex-direction: row-reverse;
+    gap: 50px;
+    background-position: left -256px bottom 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .your-order-buttom-part {
+    background-position: left -221px bottom 0px;
+  }
+}
+
+.your-order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.your-order-form-text {
+  line-height: 1.37;
+  max-width: 335px;
+}
+
+@media screen and (min-width: 768px) {
+  .your-order-form-text {
+    line-height: 1.32;
+    max-width: 542px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .your-order-form-text {
+    max-width: 666px;
+  }
+}
+
+.your-order-inputs {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 335px;
+  height: 330px;
+}
+
+@media screen and (min-width: 768px) {
+  .your-order-inputs {
+    width: 508px;
+    height: 336px;
+  }
 }
 
 .order-input {
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 15px;
-  width: 508px;
-  height: 50px;
-  font-size: 16px;
+  width: 335px;
+  height: 47px;
+  font-size: 14px;
   letter-spacing: -0.02em;
-  color: var(--white);
+  color: rgba(252, 249, 249, 0.5);
   background-color: transparent;
   padding: 14px 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .order-input {
+    width: 508px;
+    height: 50px;
+    font-size: 16px;
+  }
 }
 
 .order-input:hover {
@@ -25,15 +180,66 @@
 }
 
 .order-input::placeholder {
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(252, 249, 249, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .order-input::placeholder {
+    font-size: 16px;
+  }
 }
 
 .comment-field {
   border-radius: 8px;
   width: 508px;
   height: 196px;
-  margin-bottom: 40px;
   resize: none;
+}
+
+.button .your-order {
+  /*display: inline-flex;
+  position: relative;
+  align-items: center;*/
+}
+
+.button-icon {
+  /*fill: var(--yellow);
+  margin-left: 10px;*/
+}
+
+.your-order-image {
+}
+
+.your-order-img {
+  width: 704px;
+  height: 521px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .your-order-img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .your-order-image {
+    margin: 0px 32px 79px 32px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .your-order-image {
+    width: 588px;
+    margin: 0px 0px 119px 50px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .your-order-image {
+    width: 524px;
+    margin-left: 100px;
+  }
 }
