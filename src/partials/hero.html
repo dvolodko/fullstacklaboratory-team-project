@@ -1,45 +1,95 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="../css/container.css">
-	<link rel="stylesheet" href="../css/reset.css">
-	<link rel="stylesheet" href="../css/general.css">
-	<link rel="stylesheet" href="../css/hero.css">
-</head>
-<body>
-	<section class="hero-section">
-		<div class="container section-text">
-			<div class="container photo">
-				<img srcset="../images/vyshyvanka-desktop-1440/hero-img@1x-webp.webp 1x
-								../images/vyshyvanka-desktop-1440/hero-img 2x"
-					src="../images/vyshyvanka-desktop-1440/hero-img@1x-webp.webp" alt="girl-in vyshyvanka" width="335" height="545">
-			</div>
+<section class="hero-section">
+  <div class="container section-text">
 			<div class="hero-descr">
-			<h1 class="text">Reviving the traditional <span class="text-span">Ukrainian</span> artistry in every stitch.
-			</h1>
-			<button class="btn-order" type="button">
-				Order 
-				<svg class="btn-icon" width="26" height="16">
-					<use href="../images/svg/sprite.svg#icon-vector"></use>
-				</svg>
-				<a href=""></a>
-			</button>
-			<!-- <div class="container photo">
-				<img srcset="../images/vyshyvanka-mobile-375/hero-mobile@1x-min.jpg
-								../images/vyshyvanka-mobile-375/hero-mobilel@2x-min.jpg 2x"
-					src="../images/vyshyvanka-mobile-375/hero-mobile@1x-min.jpg" alt="girl-in vyshyvanka" width="335" height="545">
-			</div> -->
+				<h1 class="text">
+					Reviving the traditional
+					<span class="text-span">Ukrainian</span> artistry in every stitch.
+				</h1>
+				<button class="btn-order" type="button">
+					Order
+					<svg class="btn-icon" width="26" height="16">
+						<use href="./images/svg/sprite.svg#icon-vector"></use>
+					</svg>
+					<a href="./your-order.html"></a>
+				</button>
 			</div>
-						<div class="descr">
-							<svg class="descr-icon" width="52" height="51">
-								<use href="../images/svg/sprite.svg#icon-Star-10"></use>
-							</svg>
-						<p class="subtitle-text-hero">all embroidery is made by hand</p>
-					</div>
-</div>
+			<div class="descr">
+				<svg class="descr-icon" width="52" height="51">
+					<use href="./images/svg/sprite.svg#icon-Star-10"></use>
+				</svg>
+				<p class="subtitle-text-hero">all embroidery is made by hand</p>
+			</div>
+    <div class="photo">
+      <picture>
+        <source
+          srcset="
+            ./images/vyshyvanka-mobile-375/hero-mobile@1x-min.jpg  1x,
+            ./images/vyshyvanka-mobile-375/hero-mobilel@2x-min.jpg 2x
+          "
+          media="(max-width:767px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            .images/vyshyvanka-mobile-375/hero-mobile@1x-webp.webp   1x,
+            ./images/vyshyvanka-mobile-375/hero-mobilel@2x-webp.webp 2x
+          "
+          media="(max-width:767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/vyshyvanka-tablet-768/hero-img@1x.jpg 1x,
+            ./images/vyshyvanka-tablet-768/hero-img@2x.jpg 2x
+          "
+          media="(max-width:1279px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/vyshyvanka-tablet-768/hero-img@1x-webp.webp 1x,
+            ./images/vyshyvanka-tablet-768/hero-img@2x-webp.webp 2x
+          "
+          media="(max-width:1279px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/vyshyvanka-desktop-1280/hero-img@1x.jpg 1x,
+            ./images/vyshyvanka-desktop-1280/hero-img@2x.jpg 2x
+          "
+          media="(max-width:1439px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/vyshyvanka-desktop-1280/hero-img@1x-webp.webp 1x,
+            ./images/vyshyvanka-desktop-1280/hero-img@2x-webp.webp 2x
+          "
+          media="(max-width:1439px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/vyshyvanka-desktop-1440/hero-img@1x.jpg 1x,
+            ./images/vyshyvanka-desktop-1440/hero-img@2x.jpg 2x
+          "
+          media="(min-width:1440px)"
+          type="image/jpeg"
+        />
+        <source
+          srcset="
+            ./images/vyshyvanka-desktop-1440/hero-img@1x-webp.webp 1x,
+            ./images/vyshyvanka-desktop-1440/hero-img@2x-webp.webp 2x
+          "
+          media="(min-width:1440px)"
+          type="image/webp"
+        />
+        <img
+          src="./images/vyshyvanka-mobile-375/hero-mobile@1x-min.jpg"
+          alt="image"
+        />
+      </picture>
+    </div>
+  </div>
 </section>
-</body>
-</html>
