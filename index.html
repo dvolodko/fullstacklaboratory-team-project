@@ -17,7 +17,7 @@
     />
     
     <script type="module" crossorigin src="/fullstacklaboratory-team-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/fullstacklaboratory-team-project/assets/index-6974d8e5.css">
+    <link rel="stylesheet" href="/fullstacklaboratory-team-project/assets/index-ab22862d.css">
   </head>
   <body>
     <header class="header">
@@ -473,49 +473,81 @@
 </section>
 
       <section class="your-order">
-  <div class="container">
-    <h2 class="your-order" id="your-order">
-      <span class="accent">Your order</span> is our priority: Personalized
-      approach and quality of service
-    </h2>
-    <form class="order-form">
-      <div class="order-field">
-        <div class="order-input-wrap">
-          <input
-            type="text"
-            name="customer-name"
-            placeholder="Enter your full name"
-            class="order-input"
-            id="customer-name"
-            required
-            pattern="^(\\w{2,})\\s(\\w+)$"
+  <div class="container your-order">
+    <div class="girl-green-shirt"></div>
+    <div class="your-order-buttom-part">
+      <div class="your-order-form">
+        <h2 class="your-order-form-text" id="your-order">
+          <span class="accent">Your order</span> is our priority: Personalized
+          approach and quality of service
+        </h2>
+        <form class="your-order-inputs">
+          <div class="order-field">
+            <div class="order-input-wrap">
+              <input
+                type="text"
+                name="customer-name"
+                placeholder="Enter your full name"
+                class="order-input"
+                id="customer-name"
+                required
+                pattern="^(\\w{2,})\\s(\\w+)$"
+              />
+            </div>
+          </div>
+          <div class="order-field">
+            <div class="order-input-wrap">
+              <input
+                type="email"
+                name="customer-email"
+                placeholder="Enter your email"
+                class="order-input"
+                id="customer-email"
+                required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+              />
+            </div>
+          </div>
+          <div class="order-form">
+            <textarea
+              name="customer-comment"
+              placeholder="Comments"
+              id="customer-comment"
+              class="order-input comment-field"
+              required
+            ></textarea>
+          </div>
+        </form>
+        <button type="submit" class="button your-order">
+          SEND<svg class="button-icon" width="26" height="10">
+            <use href="/fullstacklaboratory-team-project/assets/sprite-79fdf0fe.svg#icon-vector"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="your-order-image">
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="/fullstacklaboratory-team-project/assets/order-img@1x-08e4f0c6.jpg 1x, /fullstacklaboratory-team-project/assets/order-img@2x-19f50209.jpg 2x"
           />
-        </div>
-      </div>
-      <div class="order-field">
-        <div class="order-input-wrap">
-          <input
-            type="ema"
-            name="customer-email"
-            placeholder="Enter your email"
-            class="order-input"
-            id="customer-email"
-            required
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+          <source
+            media="(min-width: 1280px)"
+            srcset="/fullstacklaboratory-team-project/assets/order-img@1x-21da2475.jpg 1x, /fullstacklaboratory-team-project/assets/order-img@2x-ef7bb0cb.jpg 2x"
           />
-        </div>
+          <source
+            media="(min-width: 768px)"
+            srcset="/fullstacklaboratory-team-project/assets/order-img@1x-5f0adbfc.jpg 1x, /fullstacklaboratory-team-project/assets/order-img@2x-bb238221.jpg 2x"
+          />
+          <img
+            class="your-order-img"
+            src="/fullstacklaboratory-team-project/assets/order-img@1x-21da2475.jpg"
+            alt="girl in a white blouse and gray vest"
+            width=""
+            height=""
+          />
+        </picture>
       </div>
-      <div class="order-form">
-        <textarea
-          name="customer-comment"
-          placeholder="Comments"
-          id="customer-comment"
-          class="order-input comment-field"
-          required
-        ></textarea>
-      </div>
-    </form>
-    <button type="submit" class="button">SEND</button>
+    </div>
   </div>
 </section>
 
