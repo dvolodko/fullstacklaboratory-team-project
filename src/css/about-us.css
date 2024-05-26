@@ -1,123 +1,159 @@
-.about-title{
-margin-bottom: 40px;
-margin-top: 2px;
-}
-.about-text{
-    margin-bottom: 50px;
-    letter-spacing: -0.04em;
-   
-}
-.about-text-vyshyvanka{
-   margin-top: 0;
-   margin-bottom: 0;
-} 
-.about-text-story{
-    margin-bottom: 20px;
-    margin-top: 0;
-}
-
-.about-container{
-    display: flex;
-    flex-direction: column;
-    height: 957px;
-    background-image: url(/images/png/black.png);
-    background-size: 459px 408px; 
-       background-repeat: no-repeat;
-  position: relative;
-  background-position: left 105px bottom 62px;
-   
-}
- .about-img{
-  width: 335px;
-  height: 499px;
-    }
-@media screen and (min-width:320px) and (max-width:375px){
-  .about-container{
-    max-width: 335px;
-  }
-  .about-text-all{
-    max-width: 335px;
-  }
-  .about-thumb{
-    max-width: 335px;
-  }
-  .about{
-    max-width: 335px;
-  }
-}
-.about-thumb {
-  border-radius: 4px;
-  overflow: hidden;
+.about-container {
   position: relative;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/images/png/black.png);
+  background-size: 459px 408px;
+  background-repeat: no-repeat;
+  background-position: left 105px bottom 62px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 45px;
+  padding-bottom: 80px;
+  overflow: hidden;
 }
 
-  @media screen and (min-width:768px){
-    .about-title{
-        font-size: 44px;
-       line-height: 1.45;
-    }
-    .about-text{
-        margin-bottom: 40px; 
-    }
-    .about-text-vyshyvanka{
-        font-size: 16px; 
-    }
-    .about-text-story{
-        font-size: 16px;  
-    }
-    .about-img{
-      width: 704px;
-height: 545px;
-    }
-    .about-container{
-            width: 704px;
-            height: 907px;
-            background-size: 545px 484px; 
-            background-position: left 367px bottom 50px;
-          }
-    }
-   
-  
+.about-text-all {
+  max-width: 335px;
+}
+.about-thumb {
+  position: relative;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-g8 {
+  position: absolute;
+  bottom: -65px;
+  left: 105px;
+  width: 459px;
+  height: 408px;
+  z-index: 1;
+}
+.about-img-container {
+  position: relative;
+  width: fit-content;
+}
+.about-img {
+  position: relative;
+  z-index: 2;
+  width: 335px;
+  height: 499px;
+}
+.about-title {
+  margin-bottom: 40px;
+  margin-top: 2px;
+  text-align: left;
+  color: #fcf9f9;
+}
 
+.about-text {
+  margin-bottom: 50px;
+  letter-spacing: -0.04em;
+  text-align: center;
+  /* color: #898989; */
+}
+.about-text-vyshyvanka {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: left;
+}
 
+.about-text-story {
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-align: left;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .about-container {
+    max-width: 100%;
+  }
+  .about-thumb,
+  .about-text-all {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/png/black.png);
+    background-size: 459px 408px;
+    background-repeat: no-repeat;
+    background-position: left 105px bottom 62px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    overflow: hidden;
+  }
 
-@media screen and (min-width:1280px){
-  .about-text-all{
-    margin-top: 78px;
-    padding-bottom:78px;
-    width: 536px;
-    height: 388px;
-   }
-   
-   .about-container{
-       flex-direction: row;
-       gap: 50px;
-       width: 1240px;
-height: 545px;
-padding-right: 50px;
-padding-left: 50px;
-background-size: 544px 484px; 
-background-position: left 845px bottom 80px;
-   }
-   .about-img{
-     width: 594px;
-     height: 545px;
- }
+  .about-text-all {
+    max-width: 704px;
+  }
+
+  .about-title {
+    font-size: 44px;
+    line-height: 1.45;
+    text-align: left;
+  }
+
+  .about-text {
+    margin-bottom: 40px;
+  }
+
+  .about-text-vyshyvanka {
+    font-size: 16px;
+  }
+
+  .about-text-story {
+    font-size: 16px;
+  }
+
+  .about-img {
+    width: 704px;
+    height: 545px;
+  }
+
+  .about-g8 {
+    
+    left: 332px;
+    bottom: -45px;
+    width: 545px;
+    height: 484px;
+  }
 }
 
 
-@media screen and (min-width:1440px){
-  .about-text-all{
-    width: 481px;
+@media screen and (min-width: 1440px) {
+  .about-container {
+    padding-bottom: 115px;
+  }
+
+  .about-text-all {
+    max-width: 481px;
     height: 388px;
   }
-  .about-container{
-    background-size: 544px 483px; 
+
+  .about-container {
+    background-size: 544px 483px;
     background-position: left 795px bottom 79px;
   }
-  .about-img{
+
+  .about-img {
     width: 709px;
     height: 545px;
-}
+  }
+
+  .about-g8 {
+    right: -100px;
+    bottom: -80px;
+    width: 545px;
+    height: 484px;
+  }
 }
