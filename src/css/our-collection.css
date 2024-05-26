@@ -21,6 +21,7 @@
   text-align: center;
   border-radius: 4px;
   background-color: inherit;
+  
 }
 
 .our-collection-description {
@@ -29,6 +30,7 @@
   flex-direction: column;
   gap: 8px;
   width: 100%;
+ 
 }
 
 .our-collection-text {
@@ -53,9 +55,10 @@
 .flip-card {
   background-color: transparent;
   border: 1px solid #1c2225;
-  width: 400px;
+  width: 335px;
   height: 430px;
   perspective: 1000px;
+  border-radius: 4px;
 }
 
 .flip-card-inner {
@@ -96,15 +99,16 @@
 
   color: var(--black);
   transform: rotateY(180deg);
+  background-image: url(../images/png/teal.png);
+  background-size: 340px;
+  background-repeat: no-repeat;
+  background-position: center 350px;
 }
 
 .flip-text {
   color: var(--black);
   padding: 20px;
-  background-image: url(../images/png/teal.png);
-  background-size: 300px;
-  background-repeat: no-repeat;
-  background-position: center 250px;
+  
   line-height: 1.2em;
 }
 
@@ -125,6 +129,7 @@
 
 img {
   border-radius: 10px;
+  width: 100%;
 }
 
 /* Responsive Layout */
@@ -139,10 +144,31 @@ img {
   .our-collection-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-}
+
+  .flip-card {
+   
+    width: 342px;
+ 
+}}
 
 @media (min-width: 1280px) {
   .our-collection-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-}
+
+  .flip-card {
+   
+    width: 380px;
+
+
+
+}}
+
+
+@media (min-width: 1440px) {
+
+  .flip-card {
+   
+    width: 400px;
+
+}}
