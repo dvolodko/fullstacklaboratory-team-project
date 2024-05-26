@@ -15,6 +15,7 @@ margin-top: 2px;
     margin-bottom: 20px;
     margin-top: 0;
 }
+
 .about-container{
     display: flex;
     flex-direction: column;
@@ -25,16 +26,22 @@ margin-top: 2px;
     .about-img{
     width: 335px;
     height: 499px;
+  }}
+  .about-text-all{
+    width: 335px;
+    height: 408px;
   }
-}
+
 
 .about-thumb {
   border-radius: 4px;
   overflow: hidden;
+  position: relative;
+  display: flex;
 }
 
 .about{
-    background-image: url();
+    background-image: url(/images/png/black.png);
     background-size: 459px 408px; 
        background-repeat: no-repeat;
   position: relative;
@@ -43,10 +50,64 @@ margin-top: 2px;
  
 
   
+  @media screen and (min-width:768px){
+    .about-title{
+        font-size: 44px;
+       line-height: 1.45;
+    }
+    .about-text{
+        margin-bottom: 40px; 
+
+    }
+    .about-text-vyshyvanka{
+        font-size: 16px; 
+    }
+    .about-text-story{
+        font-size: 16px;  
+    }
+    /* .about-img{
+        width: 704px;
+        height: 545px;
+    } */
+    .about-container{
+            width: 704px;
+            height: 907px;
+          }
+          .about-img{
+            width: 704px;
+           height: 545px; 
+        }
+        .about{
+            background-size: 545px 484px; 
+            background-position: left 399px bottom 50px;
+        }
+    }
+   
+  
 
 
 
-
+  @media screen and (min-width:1280px){
+    .about-text-all{
+     margin-top: 78px;
+     padding-bottom:78;
+     width: 536px;
+     height: 388px;
+    }
+  
+    .about-container{
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 50px;
+        width: 1240px;
+         height: 545px;
+    }
+    .about{
+      background-size: 544px 484px; 
+      background-position: left 895px bottom 70,54px;
+    }
+  }
+ 
 
 
   @media screen and (min-width:768px){
@@ -64,10 +125,10 @@ margin-top: 2px;
     .about-text-story{
         font-size: 16px;  
     }
-    .about-img{
+    /* .about-img{
         width: 704px;
         height: 545px;
-    }
+    } */
     .about-container{
             width: 704px;
             height: 907px;
@@ -77,7 +138,6 @@ margin-top: 2px;
            height: 545px; 
         }
         .about{
-            background-image: url(./images/png/teal.png); 
             background-size: 545px 484px; 
             background-position: left 399px bottom 50px;
         }
@@ -89,11 +149,22 @@ margin-top: 2px;
 
   @media screen and (min-width:1280px){
     .about-text-all{
-     margin-top: 78,5px;
-     padding-bottom:78,5;
-    margin-right: 50px;
+     margin-top: 78 px;
+     padding-bottom:78 px;
+     width: 536px;
+     height: 388px;
     }
-    .about-title{
-        
+    
+    .about-container{
+        flex-direction: row;
+        gap: 50px;
+        width: 1240px;
+height: 545px;
+padding-right: 50px;
+padding-left: 50px;
+    }
+    .about{
+      background-size: 544px 484px; 
+      background-position: left 895px bottom 70,54px;
     }
   }
