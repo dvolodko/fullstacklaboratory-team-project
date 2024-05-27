@@ -64,6 +64,7 @@
 .social-menu-item:hover,
 .social-menu-item:focus {
   border: 1px solid var(--yellow);
+  background: var(--black);
   cursor: pointer;
 }
 .social-menu-link {

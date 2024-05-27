@@ -1,0 +1,41 @@
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid rgba(252, 249, 249, 0.1);
+}
+.foooter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  background-image: url(/src/images/png/yellow.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+.text-footer {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 123%;
+  letter-spacing: -0.03em;
+  color: var(--white);
+}
+@media screen and (min-width: 768px) {
+  .foooter-container {
+    gap: 80px;
+  }
+  .text-footer {
+    max-width: 521px;
+    font-size: 54px;
+    line-height: 119%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .foooter-container {
+    gap: 117px;
+  }
+  .text-footer {
+    max-width: 754px;
+    font-size: 64px;
+    line-height: 116%;
+  }
+}
