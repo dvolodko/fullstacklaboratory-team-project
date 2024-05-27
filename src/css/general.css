@@ -13,6 +13,7 @@ body {
   background-color: var(--black);
   font-family: var(--font-family);
   font-size: 14px;
+  line-height: normal;
   color: var(--font-prime);
 }
 
@@ -46,6 +47,7 @@ h2 {
   border-radius: 15px;
   padding: 14px 36px;
   min-width: 145px;
+  max-width: 154px;
   height: 49px;
   background-color: transparent;
   font-weight: 600;
@@ -87,6 +89,7 @@ h2 {
   .button {
     padding: 14px 39px;
     min-width: 168px;
+    max-width: 168px;
     height: 50px;
     font-size: 16px;
   }

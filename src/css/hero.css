@@ -1,0 +1,159 @@
+.section-text {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .section-text {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1280px) {
+  .section-text {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-text {
+    display: flex;
+    margin: 0 auto;
+  }
+}
+
+.text {
+  font-size: 44px;
+  font-weight: 400;
+  line-height: 1.09;
+  letter-spacing: -0.03em;
+  color: #fcf9f9;
+  margin-bottom: 20px;
+
+  width: 335px;
+  max-height: 192px;
+}
+
+@media (min-width: 768px) {
+  .text {
+    font-size: 54px;
+    line-height: 1.18;
+    width: 549px;
+    max-height: 192px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .text {
+    font-size: 54px;
+    line-height: 1.18;
+    width: 618px;
+    max-height: 192px;
+
+    margin-top: 94px;
+    margin-left: 65px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .text {
+    font-size: 64px;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+    color: #fcf9f9;
+    width: 638px;
+    max-height: 222px;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 66px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.btn-order {
+  margin-left: 70px;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .btn-order {
+    padding: 14px 39px;
+    width: 168px;
+    height: 50px;
+
+    margin-top: 40px;
+    margin-left: 141px;
+    margin-bottom: 46px;
+  }
+}
+@media (min-width: 1280px) {
+  .btn-order {
+    padding: 14px 39px;
+    width: 168px;
+    height: 50px;
+
+    margin-top: 40px;
+    margin-left: 141px;
+  }
+}
+@media (min-width: 1440px) {
+  .btn-order {
+    padding: 14px 39px;
+    width: 168px;
+    height: 50px;
+
+    /* margin-top: 40px; */
+    margin-left: 141px;
+  }
+}
+
+.descr {
+  display: none;
+  width: 115px;
+  height: 111px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .descr {
+    display: block;
+    margin-left: 40px;
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .descr {
+    margin-left: 64px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .descr {
+    margin-left: 64px;
+    margin-top: 80px;
+  }
+}
+
+.descr-icon {
+  margin-bottom: 16px;
+}
+
+.photo {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+@media (min-width: 1280px) {
+  .photo {
+    order: -1;
+  }
+}

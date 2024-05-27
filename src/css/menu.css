@@ -5,6 +5,7 @@
 .navigation-menu {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
   gap: 25px 40px;
   min-width: 280px;
   max-height: 61px;
@@ -16,6 +17,8 @@
   line-height: 129%;
   text-transform: uppercase;
   color: var(--white);
+  padding-top: 17px;
+  padding-bottom: 17px;
   transition: color 250ms var(--transition-function-main);
 }
 
@@ -26,13 +29,13 @@
 
 @media screen and (min-width: 768px) {
   .navigation-menu {
-    grid-template-columns: repeat(4, 1fr);
+    display: flex;
     gap: 25px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .header .page-navigation {
-    display: grid;
+    display: flex;
   }
 }

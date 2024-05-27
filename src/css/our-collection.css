@@ -11,7 +11,6 @@
   background-size: 300px;
   background-position: left 21%;
   background-repeat: no-repeat;
-  
 }
 
 .our-collection-grid-item {
@@ -19,9 +18,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  border-radius: 4px;
   background-color: inherit;
-  
 }
 
 .our-collection-description {
@@ -30,7 +27,6 @@
   flex-direction: column;
   gap: 8px;
   width: 100%;
- 
 }
 
 .our-collection-text {
@@ -54,11 +50,9 @@
 /* ======================== Flip Card ======================== */
 .flip-card {
   background-color: transparent;
-  border: 1px solid #1c2225;
   width: 335px;
   height: 430px;
   perspective: 1000px;
-  border-radius: 4px;
 }
 
 .flip-card-inner {
@@ -68,7 +62,6 @@
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  
 }
 
 .flip-card:hover .flip-card-inner {
@@ -83,53 +76,41 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 4px;
-  
+  overflow: hidden;
 }
 
 .flip-card-front {
   background-color: var(--white);
   color: var(--black);
-  
 }
 
 .flip-card-back {
   padding: 24px;
-  font-size: 24px;
+  font-size: clamp(0.875rem, 0.787rem + 0.3756vw, 1.125rem);
   background-color: var(--yellow);
 
   color: var(--black);
   transform: rotateY(180deg);
   background-image: url(../images/png/teal.png);
-  background-size: 340px;
+  background-size: 400px;
   background-repeat: no-repeat;
-  background-position: center 350px;
+  background-position: center 300px;
 }
 
 .flip-text {
   color: var(--black);
   padding: 20px;
-  
-  line-height: 1.2em;
+  line-height: 1em;
 }
 
 .flip-text-set {
   display: flex;
   flex-direction: column;
   gap: 15px;
-  
-  
 }
 
 .flip-text-item {
-  list-style-type:square
-  
-  
-}
-
-
-img {
-  border-radius: 10px;
-  width: 100%;
+  list-style-type: square;
 }
 
 /* Responsive Layout */
@@ -137,6 +118,10 @@ img {
 @media (min-width: 320px) and (max-width: 759px) {
   .our-collection-grid .flip-card {
     grid-template-columns: 1fr;
+  }
+
+  .flip-card {
+    height: 360px;
   }
 }
 
@@ -146,10 +131,9 @@ img {
   }
 
   .flip-card {
-   
     width: 342px;
- 
-}}
+  }
+}
 
 @media (min-width: 1280px) {
   .our-collection-grid {
@@ -157,18 +141,12 @@ img {
   }
 
   .flip-card {
-   
     width: 380px;
-
-
-
-}}
-
+  }
+}
 
 @media (min-width: 1440px) {
-
   .flip-card {
-   
     width: 400px;
-
-}}
+  }
+}

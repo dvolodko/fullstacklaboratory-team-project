@@ -1,5 +1,5 @@
 .testimonials-title {
-  margin-bottom: 40px;
+  margin-bottom: 64px;
 }
 
 .testimonials-list-item {
@@ -22,7 +22,6 @@
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 4px;
   padding: 0px 18px 18px 18px;
-
 }
 
 .testimonials-list-fullname {
@@ -44,7 +43,6 @@
 }
 
 @media (min-width: 768px) {
-
   .testimonials-list {
     display: flex;
     align-items: flex-start;
