@@ -13,6 +13,11 @@
 }
 
 .mob-menu {
+  background-image: url(/images/png/teal.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+
   position: fixed;
   background-color: #ecd979;
   padding: 20px;
@@ -82,13 +87,6 @@
   color: #1c2225;
 }
 
-.mob-img {
-  position: absolute;
-  bottom: -50px;
-  right: -30px;
-  left: -30px;
-}
-
 /* ======================= TABLET ========================== */
 @media screen and (min-width: 768px) {
   .mob-menu {
@@ -98,7 +96,6 @@
 
   .menu-container {
     column-gap: 79px;
-    /* margin-bottom: auto; */
   }
 
   .mob-tel {
@@ -118,9 +115,5 @@
   .modal-menu-nav {
     height: 147px;
     gap: 25px;
-  }
-
-  .mob-img {
-    bottom: -150px;
   }
 }
