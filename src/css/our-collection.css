@@ -94,7 +94,7 @@
 
 .flip-card-back {
   padding: 24px;
-  font-size: 24px;
+  font-size: clamp(0.875rem, 0.787rem + 0.3756vw, 1.125rem);
   background-color: var(--yellow);
 
   color: var(--black);
@@ -102,14 +102,13 @@
   background-image: url(../images/png/teal.png);
   background-size: 340px;
   background-repeat: no-repeat;
-  background-position: center 350px;
+  background-position: center 300px;
 }
 
 .flip-text {
   color: var(--black);
   padding: 20px;
-  
-  line-height: 1.2em;
+  line-height: 1.0em;
 }
 
 .flip-text-set {
@@ -130,6 +129,8 @@
 img {
   border-radius: 10px;
   width: 100%;
+  
+  
 }
 
 /* Responsive Layout */
@@ -138,6 +139,12 @@ img {
   .our-collection-grid .flip-card {
     grid-template-columns: 1fr;
   }
+
+  .flip-card {
+   
+    height: 360px;
+ 
+}
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
