@@ -17,7 +17,7 @@
     />
     
     <script type="module" crossorigin src="/fullstacklaboratory-team-project/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/fullstacklaboratory-team-project/assets/index-fbcb29e0.css">
+    <link rel="stylesheet" href="/fullstacklaboratory-team-project/assets/index-ab6f1f28.css">
   </head>
   <body>
     <header class="header">
@@ -566,9 +566,9 @@
   </ul>
 </section>
 
-      <section class="your-order">
+      <section class="your-order-section">
   <div class="container your-order">
-    <div class="girl-green-shirt"></div>
+    <!--<div class="girl-green-shirt"></div>-->
     <div class="your-order-buttom-part">
       <div class="your-order-form">
         <h2 class="your-order-form-text" id="your-order">
@@ -598,8 +598,9 @@
                 class="order-input"
                 id="customer-email"
                 required
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+                pattern="^\S+@\S+\.\S+$"
               />
+              <!--"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"-->
             </div>
           </div>
           <div class="order-form">
@@ -622,19 +623,40 @@
         <picture>
           <source
             media="(min-width: 1440px)"
+            type="image/jpg"
             srcset="/fullstacklaboratory-team-project/assets/order-img@1x-08e4f0c6.jpg 1x, /fullstacklaboratory-team-project/assets/order-img@2x-19f50209.jpg 2x"
           />
           <source
+            media="(min-width: 1440px)"
+            type="image/webp"
+            srcset="/fullstacklaboratory-team-project/assets/order-img@1x-webp-b4a82148.webp 1x, /fullstacklaboratory-team-project/assets/order-img@2x-webp-e97df921.webp 2x"
+          />
+
+          <source
             media="(min-width: 1280px)"
+            type="image/jpg"
             srcset="/fullstacklaboratory-team-project/assets/order-img@1x-21da2475.jpg 1x, /fullstacklaboratory-team-project/assets/order-img@2x-ef7bb0cb.jpg 2x"
           />
           <source
+            media="(min-width: 1280px)"
+            type="image/webp"
+            srcset="/fullstacklaboratory-team-project/assets/order-img@1x-webp-706f594e.webp 1x, /fullstacklaboratory-team-project/assets/order-img@2x-webp-b4bc4562.webp 2x"
+          />
+
+          <source
             media="(min-width: 768px)"
+            type="image/jpg"
             srcset="/fullstacklaboratory-team-project/assets/order-img@1x-5f0adbfc.jpg 1x, /fullstacklaboratory-team-project/assets/order-img@2x-bb238221.jpg 2x"
           />
+          <source
+            media="(min-width: 768px)"
+            type="image/webp"
+            srcset="/fullstacklaboratory-team-project/assets/order-img@1x-webp-6dc861bb.webp 1x, /fullstacklaboratory-team-project/assets/order-img@2x-webp-f620dc4c.webp 2x"
+          />
+
           <img
             class="your-order-img"
-            src="/fullstacklaboratory-team-project/assets/order-img@1x-21da2475.jpg"
+            src="/fullstacklaboratory-team-project/assets/order-img@1x-5f0adbfc.jpg"
             alt="girl in a white blouse and gray vest"
             width=""
             height=""
