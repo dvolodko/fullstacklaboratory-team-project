@@ -3,7 +3,7 @@
     <div class="header-navigation">
       <a class="page-logo" href="http://localhost:5173/">
         <img
-          src="../images/svg/logo.svg"
+          src="./images/svg/logo.svg"
           alt="logotype"
           width="44"
           height="39"
@@ -13,7 +13,7 @@
     </div>
     <div class="contact-info">
       <adress class="adress-info">
-        <a href="+380684439426" class="tel-nomber">+380 (68) 443-94-26</a>
+        <a href="tel:+380684439426" class="tel-nomber">+380 (68) 443-94-26</a>
       </adress>
       <div class="social-info">
         <ul class="social-menu">
@@ -24,7 +24,7 @@
               target="_blank"
             >
               <svg class="social-menu-icone">
-                <use href="../images/svg/sprite.svg#icon-facebook"></use>
+                <use href="./images/svg/sprite.svg#icon-facebook"></use>
               </svg>
             </a>
           </li>
@@ -35,7 +35,7 @@
               target="_blank"
             >
               <svg class="social-menu-icone">
-                <use href="../images/svg/sprite.svg#icon-instagram"></use>
+                <use href="./images/svg/sprite.svg#icon-instagram"></use>
               </svg>
             </a>
           </li>
@@ -46,14 +46,19 @@
               target="_blank"
             >
               <svg class="social-menu-icone">
-                <use href="../images/svg/sprite.svg#icon-youtube"></use>
+                <use href="./images/svg/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
         </ul>
-        <button class="burger-btn" typy="button">
+        <button
+          class="burger-btn js-open-menu"
+          typy="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="burger-btn-icon">
-            <use href="../images/svg/sprite.svg#icon-burger"></use>
+            <use href="./images/svg/sprite.svg#icon-burger"></use>
           </svg>
         </button>
       </div>

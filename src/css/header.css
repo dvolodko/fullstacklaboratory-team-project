@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 20px;
 }
 .header-navigation {
   display: flex;
@@ -83,6 +84,7 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  cursor: pointer;
 }
 .burger-btn-icon {
   width: 100%;
@@ -92,6 +94,9 @@
 @media screen and (min-width: 768px) {
 }
 @media screen and (min-width: 1280px) {
+  .header-container {
+    padding-top: 18px;
+  }
   .burger-btn {
     display: none;
   }
