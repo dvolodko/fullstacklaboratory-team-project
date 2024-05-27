@@ -1,6 +1,6 @@
-<section class="your-order">
+<section class="your-order-section">
   <div class="container your-order">
-    <div class="girl-green-shirt"></div>
+    <!--<div class="girl-green-shirt"></div>-->
     <div class="your-order-buttom-part">
       <div class="your-order-form">
         <h2 class="your-order-form-text" id="your-order">
@@ -30,8 +30,9 @@
                 class="order-input"
                 id="customer-email"
                 required
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"
+                pattern="^\S+@\S+\.\S+$"
               />
+              <!--"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"-->
             </div>
           </div>
           <div class="order-form">
@@ -46,7 +47,7 @@
         </form>
         <button type="submit" class="button your-order">
           SEND<svg class="button-icon" width="26" height="10">
-            <use href="/images/svg/sprite.svg#icon-vector"></use>
+            <use href="./images/svg/sprite.svg#icon-gorizont"></use>
           </svg>
         </button>
       </div>
@@ -54,28 +55,58 @@
         <picture>
           <source
             media="(min-width: 1440px)"
+            type="image/jpg"
             srcset="
-              /images/vyshyvanka-desktop-1440/order-img@1x.jpg 1x,
-              /images/vyshyvanka-desktop-1440/order-img@2x.jpg 2x
+              ./images/vyshyvanka-desktop-1440/order-img@1x.jpg 1x,
+              ./images/vyshyvanka-desktop-1440/order-img@2x.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 1440px)"
+            type="image/webp"
+            srcset="
+              ./images/vyshyvanka-desktop-1440/order-img@1x-webp.webp 1x,
+              ./images/vyshyvanka-desktop-1440/order-img@2x-webp.webp 2x
+            "
+          />
+
+          <source
+            media="(min-width: 1280px)"
+            type="image/jpg"
+            srcset="
+              ./images/vyshyvanka-desktop-1280/order-img@1x.jpg 1x,
+              ./images/vyshyvanka-desktop-1280/order-img@2x.jpg 2x
             "
           />
           <source
             media="(min-width: 1280px)"
+            type="image/webp"
             srcset="
-              /images/vyshyvanka-desktop-1280/order-img@1x.jpg 1x,
-              /images/vyshyvanka-desktop-1280/order-img@2x.jpg 2x
+              ./images/vyshyvanka-desktop-1280/order-img@1x-webp.webp 1x,
+              ./images/vyshyvanka-desktop-1280/order-img@2x-webp.webp 2x
+            "
+          />
+
+          <source
+            media="(min-width: 768px)"
+            type="image/jpg"
+            srcset="
+              ./images/vyshyvanka-tablet-768/order-img@1x.jpg 1x,
+              ./images/vyshyvanka-tablet-768/order-img@2x.jpg 2x
             "
           />
           <source
             media="(min-width: 768px)"
+            type="image/webp"
             srcset="
-              /images/vyshyvanka-tablet-768/order-img@1x.jpg 1x,
-              /images/vyshyvanka-tablet-768/order-img@2x.jpg 2x
+              ./images/vyshyvanka-tablet-768/order-img@1x-webp.webp 1x,
+              ./images/vyshyvanka-tablet-768/order-img@2x-webp.webp 2x
             "
           />
+
           <img
             class="your-order-img"
-            src="/images/vyshyvanka-desktop-1280/order-img@1x.jpg"
+            src="./images/vyshyvanka-tablet-768/order-img@1x.jpg"
             alt="girl in a white blouse and gray vest"
             width=""
             height=""
