@@ -1,11 +1,6 @@
 .your-order {
 }
 
-.container .your-order {
-  display: flex;
-  flex-direction: column;
-}
-
 .girl-green-shirt {
   background-image: url(/images/vyshyvanka-\ mobile-375/image-girl@1x-min.jpg);
   max-width: 375px;
