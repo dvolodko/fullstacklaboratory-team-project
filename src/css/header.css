@@ -59,12 +59,13 @@
   width: 44px;
   height: 44px;
   background: rgba(252, 249, 249, 0.1);
-  transition: border 250ms var(--transition-function-main);
+  transition: border 250ms var(--transition-function-main),
+    background-color 250ms var(--transition-function-main);
 }
 .social-menu-item:hover,
 .social-menu-item:focus {
   border: 1px solid var(--yellow);
-  background: var(--black);
+  background-color: var(--black);
   cursor: pointer;
 }
 .social-menu-link {
