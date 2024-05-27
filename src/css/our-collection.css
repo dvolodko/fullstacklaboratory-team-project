@@ -1,3 +1,10 @@
+.our-collection {
+  background-image: url(../images/png/yellow.png);
+  background-size: 199px 177px;
+  background-position: calc(50% - 205px) calc(50% - 1038px);
+  background-repeat: no-repeat;
+}
+
 .our-collection-title {
   text-align: center;
   margin-bottom: 40px;
@@ -7,10 +14,6 @@
   display: grid;
   column-gap: 20px;
   row-gap: 40px;
-  background-image: url(../images/png/yellow.png);
-  background-size: 300px;
-  background-position: left 21%;
-  background-repeat: no-repeat;
 }
 
 .our-collection-grid-item {
@@ -115,7 +118,7 @@
 
 /* Responsive Layout */
 
-@media (min-width: 320px) and (max-width: 759px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .our-collection-grid .flip-card {
     grid-template-columns: 1fr;
   }
@@ -126,6 +129,11 @@
 }
 
 @media (min-width: 768px) and (max-width: 1279px) {
+  .our-collection {
+    background-size: 338px 300px;
+    background-position: calc(50% - 460px) calc(50% - 460px);
+  }
+
   .our-collection-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -136,6 +144,11 @@
 }
 
 @media (min-width: 1280px) {
+  .our-collection {
+    background-size: 338px 300px;
+    background-position: calc(50% - 652px) calc(50% - 200px);
+  }
+
   .our-collection-grid {
     grid-template-columns: repeat(3, 1fr);
   }
