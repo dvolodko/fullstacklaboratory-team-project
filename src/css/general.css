@@ -13,6 +13,7 @@ body {
   background-color: var(--black);
   font-family: var(--font-family);
   font-size: 14px;
+  line-height: normal;
   color: var(--font-prime);
 }
 
