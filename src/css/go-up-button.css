@@ -16,8 +16,8 @@
   transition: border-color 250ms var(--transition-function-main);
 
   position: fixed;
-  bottom: 32px;
-  right: 32px;
+  bottom: 16px;
+  right: 16px;
 }
 
 .button-icon {
@@ -31,5 +31,12 @@
   border-color: var(--yellow);
   & .button-icon {
     transform: rotateZ(270deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .go-up {
+    bottom: 32px;
+    right: 32px;
   }
 }
