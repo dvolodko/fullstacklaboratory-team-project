@@ -15,7 +15,7 @@
 }
 
 .text-footer {
-  font-weight: 400;
+  color: var(--white);
   font-size: 44px;
   line-height: 1.23;
   letter-spacing: -0.03em;
