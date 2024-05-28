@@ -54,7 +54,7 @@
 .flip-card {
   background-color: transparent;
   width: 280px;
-  height: 301px;
+  height: 360px;
   perspective: 1000px;
 }
 
@@ -83,7 +83,7 @@
 }
 
 .flip-card-front {
-  background-color: var(--white);
+  background-color: #fff;
   color: var(--black);
 }
 
@@ -125,7 +125,7 @@
 
   .flip-card {
     width: 335px;
-    height: 360px;
+    height: 430px;
   }
 }
 
