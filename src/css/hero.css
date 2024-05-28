@@ -31,9 +31,6 @@
   letter-spacing: -0.03em;
   color: #fcf9f9;
   margin-bottom: 20px;
-
-  /* width: 335px; */
-  /* max-height: 192px; */
 }
 
 @media (min-width: 768px) {
@@ -107,8 +104,6 @@
     padding: 14px 39px;
     width: 168px;
     height: 50px;
-
-    /* margin-top: 40px; */
     margin-left: 141px;
   }
 }
@@ -126,7 +121,7 @@
   .descr {
     display: block;
     margin-left: 40px;
-    margin-top: 16px;
+    padding-top: 16px;
   }
 }
 
@@ -139,7 +134,7 @@
 @media (min-width: 1440px) {
   .descr {
     margin-left: 64px;
-    margin-top: 80px;
+    padding-top: 80px;
   }
 }
 
