@@ -1,0 +1,35 @@
+.go-up {
+  display: none;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  padding: 16px 8px 8px;
+  background-color: var(--black);
+  box-shadow: var(--shadow-elevation-medium);
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: var(--white);
+  transition: border-color 250ms var(--transition-function-main);
+
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+}
+
+.button-icon {
+  transform: rotateZ(330deg);
+  transform-origin: center;
+  transition: transform 250ms var(--transition-function-main);
+}
+
+.go-up:hover,
+.go-up:focus {
+  border-color: var(--yellow);
+  & .button-icon {
+    transform: rotateZ(270deg);
+  }
+}
