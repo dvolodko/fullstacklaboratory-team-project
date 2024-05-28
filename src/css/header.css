@@ -1,4 +1,4 @@
-.adress-info {
+.address-info {
   display: none;
 }
 .header-container {
@@ -6,6 +6,7 @@
   align-items: center;
   justify-content: space-between;
   padding-top: 20px;
+  padding-bottom: 20px;
 }
 .header-navigation {
   display: flex;
@@ -22,28 +23,27 @@
   align-items: center;
   gap: 20px;
 }
-.adress-info {
+.address-info {
   display: none;
+}
+.tel-nomber {
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 15px;
   padding: 14px 28px;
   width: 193px;
   height: 48px;
   transition: border 250ms var(--transition-function-main);
-}
-.adress-info:hover,
-.adress-info:focus {
-  border: 1px solid var(--yellow);
-  cursor: pointer;
-}
-.tel-nomber {
-  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 143%;
   text-transform: uppercase;
   white-space: nowrap;
+  outline: transparent;
   color: var(--white);
+}
+.tel-nomber:hover,
+.tel-nomber:focus {
+  border: 1px solid var(--yellow);
 }
 .social-menu {
   display: flex;
@@ -53,24 +53,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(252, 249, 249, 0.1);
-  border-radius: 15px;
-  padding: 8px;
+}
+.social-menu-link {
   width: 44px;
   height: 44px;
-  background: rgba(252, 249, 249, 0.1);
+  padding: 8px;
+  border: 1px solid rgba(252, 249, 249, 0.1);
+  border-radius: 15px;
+  background-color: rgba(252, 249, 249, 0.1);
+  outline: transparent;
   transition: border 250ms var(--transition-function-main),
     background-color 250ms var(--transition-function-main);
 }
-.social-menu-item:hover,
-.social-menu-item:focus {
+.social-menu-link:hover,
+.social-menu-link:focus {
   border: 1px solid var(--yellow);
   background-color: var(--black);
   cursor: pointer;
-}
-.social-menu-link {
-  width: 100%;
-  height: 100%;
 }
 .social-menu-icone {
   width: 100%;
@@ -98,11 +97,12 @@
 @media screen and (min-width: 1280px) {
   .header-container {
     padding-top: 18px;
+    padding-bottom: 18px;
   }
   .burger-btn {
     display: none;
   }
-  .adress-info {
+  .address-info {
     display: flex;
     justify-content: center;
     align-items: center;
