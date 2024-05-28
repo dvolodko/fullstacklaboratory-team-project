@@ -53,8 +53,8 @@
 /* ======================== Flip Card ======================== */
 .flip-card {
   background-color: transparent;
-  width: 335px;
-  height: 430px;
+  width: 280px;
+  height: 360px;
   perspective: 1000px;
 }
 
@@ -118,13 +118,13 @@
 
 /* Responsive Layout */
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .our-collection-grid .flip-card {
+@media (min-width: 375px) and (max-width: 767px) {
+  /* .our-collection-grid .flip-card {
     grid-template-columns: 1fr;
-  }
+  } */
 
   .flip-card {
-    height: 360px;
+    width: 335px;
   }
 }
 

@@ -58,6 +58,10 @@
     background-position: calc(50% + 528px) calc(50% + 132px);
   }
 
+  .about-text-all {
+    margin-bottom: 0;
+  }
+
   .about-container {
     flex-direction: row;
     align-items: center;

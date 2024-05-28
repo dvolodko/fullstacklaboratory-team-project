@@ -91,7 +91,7 @@
 
 .your-order-form-text {
   line-height: 1.37;
-  min-width: 335px;
+  /* min-width: 335px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -111,8 +111,8 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  min-width: 335px;
-  height: 330px;
+  /* min-width: 335px; */
+  /* height: 330px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -125,7 +125,8 @@
 .order-input {
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 15px;
-  width: 335px;
+  /* max-width: 335px; */
+  width: 100%;
   height: 47px;
   font-size: 14px;
   letter-spacing: -0.02em;
@@ -160,7 +161,7 @@
 
 .comment-field {
   border-radius: 8px;
-  width: 335px;
+  /* width: 335px; */
   height: 196px;
   resize: none;
 }

@@ -32,8 +32,8 @@
   color: #fcf9f9;
   margin-bottom: 20px;
 
-  width: 335px;
-  max-height: 192px;
+  /* width: 335px; */
+  /* max-height: 192px; */
 }
 
 @media (min-width: 768px) {
