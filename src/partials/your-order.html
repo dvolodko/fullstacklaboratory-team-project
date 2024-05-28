@@ -7,33 +7,33 @@
           approach and quality of service
         </h2>
         <form class="your-order-inputs">
-          <div class="order-field">
-            <div class="order-input-wrap">
-              <input
-                type="text"
-                name="customer-name"
-                placeholder="Enter your full name"
-                class="order-input"
-                id="customer-name"
-                required
-                pattern="^(\\w{2,})\\s(\\w+)$"
-              />
-            </div>
-          </div>
-          <div class="order-field">
-            <div class="order-input-wrap">
-              <input
-                type="email"
-                name="customer-email"
-                placeholder="Enter your email"
-                class="order-input"
-                id="customer-email"
-                required
-                pattern="^\S+@\S+\.\S+$"
-              />
-              <!--"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"-->
-            </div>
-          </div>
+          <!--<div class="order-field">-->
+          <!--<div class="order-input-wrap">-->
+          <input
+            type="text"
+            name="customer-name"
+            placeholder="Enter your full name"
+            class="order-input"
+            id="customer-name"
+            required
+            pattern="^(\\w{2,})\\s(\\w+)$"
+          />
+          <!--</div>-->
+          <!--</div>-->
+          <!--<div class="order-field">-->
+          <!--<div class="order-input-wrap">-->
+          <input
+            type="email"
+            name="customer-email"
+            placeholder="Enter your email"
+            class="order-input"
+            id="customer-email"
+            required
+            pattern="^\S+@\S+\.\S+$"
+          />
+          <!--"[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}"-->
+          <!--</div>-->
+          <!--</div>-->
           <div class="order-form">
             <textarea
               name="customer-comment"
@@ -43,12 +43,12 @@
               required
             ></textarea>
           </div>
+          <button type="submit" class="button your-order-button">
+            Send<svg class="button-icon" width="26" height="10">
+              <use href="./images/svg/sprite.svg#icon-gorizont"></use>
+            </svg>
+          </button>
         </form>
-        <button type="submit" class="button your-order-button">
-          Send<svg class="button-icon" width="26" height="10">
-            <use href="./images/svg/sprite.svg#icon-gorizont"></use>
-          </svg>
-        </button>
       </div>
       <div class="your-order-image">
         <picture>
