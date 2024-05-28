@@ -48,7 +48,6 @@
   display: flex;
   flex-direction: row;
   column-gap: 40px;
-  /* margin-bottom: 186px; */
 }
 
 .mob-tel {
@@ -72,7 +71,6 @@
 }
 
 .modal-menu-nav {
-  /* height: 132px; */
   display: flex;
   flex-direction: column;
   gap: 20px;
