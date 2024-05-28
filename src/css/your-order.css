@@ -75,20 +75,19 @@
 
 @media screen and (min-width: 768px) {
   .container.your-order {
-    /*padding-top: 100px;*/
+    padding-top: 100px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container.your-order {
-    /*padding-top: 150px;*/
+    padding-top: 150px;
   }
 }
 
 .your-order-buttom-part {
   display: flex;
   flex-direction: column;
-  /*padding-top: 80px;*/
 }
 
 @media screen and (min-width: 1280px) {
@@ -107,7 +106,6 @@
 
 .your-order-form-text {
   line-height: 1.37;
-  /* min-width: 335px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -127,8 +125,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* min-width: 335px; */
-  /* height: 330px; */
 }
 
 @media screen and (min-width: 768px) {
@@ -141,7 +137,6 @@
 .order-input {
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 15px;
-  /* max-width: 335px; */
   width: 100%;
   height: 47px;
   font-size: 14px;
@@ -178,7 +173,6 @@
 
 .comment-field {
   border-radius: 8px;
-  /* width: 335px; */
   height: 196px;
   resize: none;
 }
@@ -191,7 +185,6 @@
 
 .your-order-button {
   margin-top: 20px;
-  /*margin-bottom: 100px;*/
 }
 
 @media screen and (min-width: 768px) {
