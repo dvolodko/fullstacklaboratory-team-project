@@ -14,7 +14,7 @@
             class="order-input"
             id="customer-name"
             required
-            pattern="^(\\w{2,})\\s(\\w+)$"
+            pattern="^(\w\w+)\s(\w+)$"
           />
           <input
             type="email"
@@ -26,15 +26,15 @@
             pattern="^\S+@\S+\.\S+$"
           />
 
-          <div class="order-form">
-            <textarea
-              name="customer-comment"
-              placeholder="Comments"
-              id="customer-comment"
-              class="order-input comment-field"
-              required
-            ></textarea>
-          </div>
+          <!-- <div class="order-form"> -->
+          <textarea
+            name="customer-comment"
+            placeholder="Comments"
+            id="customer-comment"
+            class="order-input comment-field"
+            required
+          ></textarea>
+          <!-- </div> -->
           <button type="submit" class="button your-order-button">
             Send<svg class="button-icon" width="26" height="10">
               <use href="./images/svg/sprite.svg#icon-gorizont"></use>

@@ -127,13 +127,6 @@
   gap: 20px;
 }
 
-@media screen and (min-width: 768px) {
-  .your-order-inputs {
-    width: 508px;
-    height: 336px;
-  }
-}
-
 .order-input {
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 15px;
@@ -156,6 +149,7 @@
 
 .order-input:hover,
 .order-input:focus {
+  outline: none;
   border: 1px solid rgba(252, 249, 249, 0.6);
 }
 
@@ -163,6 +157,16 @@
   font-size: 14px;
   letter-spacing: -0.02em;
   color: rgba(252, 249, 249, 0.5);
+}
+
+.order-input:not(:placeholder-shown):required:valid,
+.order-input:not(:placeholder-shown):valid {
+  border-color: #33cc33;
+}
+
+.order-input:not(:placeholder-shown):required:invalid,
+.order-input:not(:placeholder-shown):invalid {
+  border-color: #ff5050;
 }
 
 @media screen and (min-width: 768px) {
