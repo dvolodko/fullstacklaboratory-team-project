@@ -119,9 +119,10 @@
 /* Responsive Layout */
 
 @media (min-width: 375px) and (max-width: 767px) {
-  /* .our-collection-grid .flip-card {
-    grid-template-columns: 1fr;
-  } */
+  .our-collection {
+    background-size: 199px 177px;
+    background-position: calc(50% - 205px) calc(50% - 1200px);
+  }
 
   .flip-card {
     width: 335px;
